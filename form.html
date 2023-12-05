@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="https://ik.imagekit.io/tvlk/blog/2020/01/traveloka-official-logo-resmi-white-new.png?tr=dpr-2,w-675"
+            alt="" height="55px">
+        <ul class="navbar-nav">
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Trains</a></li>
+            <li><a href="#">Bus & Travel</a></li>
+        </ul>
+        <div class="navbar-extra">
+            <a href="#" id="hamburger-menu" style="color: #fff;"><i class='bx bx-menu'></i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2 style="padding-top: 5px; padding-bottom: 5px;">Lengkapi data diri anda</h2>
+            <form action="succes.html">
+                <p>
+                    <label for="nama">Nama lengkap : </label>
+                    <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                </p>
+                <p>
+                    <label for="alamat">Alamat : </label>
+                    <input type="text" id="alamat" placeholder="Masukkan alamat">
+                </p>
+                <p>
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" placeholder="Masukkan Email">
+                </p>
+                <p>
+                    <label for="jeniskelamin">Jenis Kelamin : </label>
+                </p>
+                <p>
+                    <input type="radio" name="jeniskelamin" id="pria">
+                    <label for="pria">Pria</label>
+                    <input type="radio" name="jeniskelamin" id="wanita">
+                    <label for="wanita">Wanita</label>
+                </p>
+                <p>
+                    <label for="tgl_lahir">Tanggal lahir : </label>
+                    <input type="date" id="tgl_lahir">
+                </p>
+                <p>
+                    <label for="pekerjaan">Pekerjaan : </label>
+                    <select name="pekerjaan" id="pekerjaan">
+                        <option value="TNI_POLRI">TNI / POLRI</option>
+                        <option value="PNS">PNS</option>
+                        <option value="Wirausaha">Wirausaha</option>
+                        <option value="Guru">Guru</option>
+                        <option value="Karyawan">Karyawan</option>
+                        <option value="Pelajar_Mahasiswa">Pelajar / Mahasiswa</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="hobby">Hobby : </label>
+                </p>
+                <p>
+                    <input type="checkbox" id="olahraga">
+                    <label for="olahraga">Berolahraga</label>
+                    <input type="checkbox" id="film">
+                    <label for="film">Menonton film / video</label>
+                    <input type="checkbox" id="musik">
+                    <label for="musik">Mendengarkan musik</label>
+                </p>
+                <p style="text-align: center;">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <p style="text-align: center; color: #fff; margin: 0; font-size: 10px;">Created by Kevin Andra</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
